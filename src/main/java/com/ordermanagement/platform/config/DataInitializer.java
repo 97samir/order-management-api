@@ -5,11 +5,14 @@ import com.ordermanagement.platform.auth.enums.Role;
 import com.ordermanagement.platform.auth.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
+@ConditionalOnProperty(name = "app.bootstrap-admin.enabled",
+        havingValue = "true")
 public class DataInitializer
         implements CommandLineRunner {
 

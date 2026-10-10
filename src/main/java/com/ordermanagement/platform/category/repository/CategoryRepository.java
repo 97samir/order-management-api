@@ -12,4 +12,7 @@ public interface CategoryRepository
     boolean existsByNameIgnoreCase(
             String name);
 
+    Optional<Category> findByNameIgnoreCase(
+            String name);
+
 }

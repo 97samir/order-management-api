@@ -1,6 +1,12 @@
 server:
   port: ${PORT:8081}
 
+app:
+  demo-data:
+    enabled: ${DEMO_DATA_ENABLED:false}
+  bootstrap-admin:
+    enabled: ${BOOTSTRAP_ADMIN_ENABLED:false}
+
 spring:
 
   application:
