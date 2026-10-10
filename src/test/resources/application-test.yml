@@ -1,0 +1,5 @@
+spring:
+
+  jwt:
+    secret: 0otNN3IncLBt9yDY0YW6/FcDdCmQiA7QGFSYzNECN2KgvNHCYnmtqSwqxEDvossd6t+sS0W6f2yd7gR+6oM7Xw==
+    expiration: 86400000
